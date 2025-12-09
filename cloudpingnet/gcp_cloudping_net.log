@@ -1,0 +1,67 @@
+2025-12-03 20:43:55,099 | INFO | SCRAPER CLOUDPING.NET GCP INICIADO
+2025-12-03 20:43:55,099 | INFO | Cada 10 min → gcp_cloudpingnet_latency_longterm.csv
+2025-12-03 20:43:55,099 | INFO | 
+ITERACIÓN 1 - 20:43
+2025-12-03 20:43:59,751 | INFO | CARGANDO CLOUDPING.NET...
+2025-12-03 20:44:18,191 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b520ad0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:44:18,196 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b7cf0e0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:44:18,197 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b5211c0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:44:33,200 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b521700>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:44:33,201 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b521910>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:44:33,202 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b521af0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:44:48,204 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b5229f0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:44:48,205 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b522c30>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:44:48,207 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b522ea0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:45:03,278 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b523440>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:45:03,281 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b523680>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:45:03,283 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b5238f0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/url
+2025-12-03 20:45:18,287 | ERROR | ERROR TOTAL: NO CARGA LA PÁGINA
+2025-12-03 20:45:18,294 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b523140>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/screenshot
+2025-12-03 20:45:18,295 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b522f00>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/screenshot
+2025-12-03 20:45:18,296 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b522c00>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce/screenshot
+2025-12-03 20:45:18,298 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b521a60>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce
+2025-12-03 20:45:18,299 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b521dc0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce
+2025-12-03 20:45:18,300 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7da50b521b50>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/ab7623a1af4965e265e3cf3f063073ce
+2025-12-03 20:46:07,894 | INFO | SCRAPER CLOUDPING.NET GCP INICIADO
+2025-12-03 20:46:07,895 | INFO | Cada 10 min → gcp_cloudpingnet_latency_longterm.csv
+2025-12-03 20:46:07,896 | INFO | 
+ITERACIÓN 1 - 20:46
+2025-12-03 20:46:09,117 | INFO | CARGANDO CLOUDPING.NET...
+2025-12-03 20:46:14,733 | INFO | PESTAÑA GCP SELECCIONADA
+2025-12-03 20:46:26,142 | INFO | GCP PING LANZADO
+2025-12-03 20:46:26,143 | INFO | ESPERANDO ~31 REGIONES (máx 300s)...
+2025-12-03 20:46:26,219 | INFO | 0s → 0 latencias
+2025-12-03 20:46:29,930 | INFO | 3s → 28 latencias
+2025-12-03 20:46:29,931 | INFO | ¡DATOS SUFICIENTES!
+2025-12-03 20:46:36,013 | INFO | US East: 595.48ms
+2025-12-03 20:46:36,167 | INFO | North America Northeast: 1107.86ms
+2025-12-03 20:46:36,246 | INFO | US Central: 1123.80ms
+2025-12-03 20:46:36,327 | INFO | US South: 1143.38ms
+2025-12-03 20:46:36,372 | INFO | US West: 1148.60ms
+2025-12-03 20:46:36,528 | INFO | US East 1: 265.22ms
+2025-12-03 20:46:36,566 | INFO | US West 8: 352.50ms
+2025-12-03 20:46:36,620 | INFO | South America East 1: 238.98ms
+2025-12-03 20:46:36,665 | INFO | South America West 1: 253.92ms
+2025-12-03 20:46:36,700 | INFO | Europe West: 127.48ms
+2025-12-03 20:46:36,740 | INFO | Europe West: 950.12ms
+2025-12-03 20:46:36,812 | INFO | Europe West: 350.48ms
+2025-12-03 20:46:36,871 | INFO | Europe West: 850.74ms
+2025-12-03 20:46:36,909 | INFO | Europe West: 654.18ms
+2025-12-03 20:46:36,941 | INFO | Europe Central: 267.60ms
+2025-12-03 20:46:36,974 | INFO | Europe West: 279.26ms
+2025-12-03 20:46:37,012 | INFO | Europe West: 480.60ms
+2025-12-03 20:46:37,049 | INFO | Europe North: 187.44ms
+2025-12-03 20:46:37,106 | INFO | Asia Northeast 2: 258.98ms
+2025-12-03 20:46:37,137 | INFO | Asia Northeast 3: 263.56ms
+2025-12-03 20:46:37,170 | INFO | Asia Northeast 1: 264.28ms
+2025-12-03 20:46:37,214 | INFO | Asia East 1: 264.58ms
+2025-12-03 20:46:37,246 | INFO | Asia East 2: 290.80ms
+2025-12-03 20:46:37,290 | INFO | Asia Southeast 1: 327.40ms
+2025-12-03 20:46:37,325 | INFO | Asia South 1: 381.24ms
+2025-12-03 20:46:37,355 | INFO | Asia Southeast 2: 328.30ms
+2025-12-03 20:46:37,403 | INFO | Asia South 2: 383.02ms
+2025-12-03 20:46:37,444 | INFO | Australia Southeast 1: 299.84ms
+2025-12-03 20:46:37,489 | INFO | Australia Southeast 2: 307.46ms
+2025-12-03 20:46:37,538 | INFO | ¡29 REGIONES GCP GUARDADAS!
+2025-12-03 20:46:37,716 | INFO | Durmiendo 10 min...
+2025-12-03 20:46:38,441 | INFO | SCRAPER GCP DETENIDO POR USUARIO

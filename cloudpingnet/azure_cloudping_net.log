@@ -1,0 +1,54 @@
+2025-12-03 20:43:58,423 | INFO | === SCRAPER AZURE CLOUDPING.NET 24/7 INICIADO ===
+2025-12-03 20:43:58,423 | INFO | Cada 10min → azure_cloudpingnet_latency_longterm.csv
+2025-12-03 20:43:58,424 | INFO | 
+ITERACIÓN 0001 → 2025-12-03 20:43:58
+2025-12-03 20:43:58,424 | INFO |  Intento 1/3
+2025-12-03 20:44:03,196 | ERROR | ERROR TOTAL AZURE: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-12-03 20:44:03,293 | WARNING |  Intento 1 falló → Esperando 90s...
+2025-12-03 20:45:33,294 | INFO |  Intento 2/3
+2025-12-03 20:45:36,625 | INFO | CARGANDO CLOUDPING.NET...
+2025-12-03 20:45:46,957 | INFO | PESTAÑA AZURE SELECCIONADA
+2025-12-03 20:45:56,296 | INFO | AZURE PING LANZADO
+2025-12-03 20:45:59,299 | INFO | ESPERANDO ~41 REGIONES AZURE...
+2025-12-03 20:46:00,081 | INFO | 0s → 43/41 regiones
+2025-12-03 20:46:00,081 | INFO | ¡DATOS COMPLETOS!
+2025-12-03 20:46:05,138 | INFO | East US                   → 289.16ms
+2025-12-03 20:46:05,187 | INFO | Canada Central            → 105.80ms
+2025-12-03 20:46:05,206 | INFO | North Central US          → 108.12ms
+2025-12-03 20:46:05,229 | INFO | South Central US          → 112.76ms
+2025-12-03 20:46:05,249 | INFO | Canada East               → 113.02ms
+2025-12-03 20:46:05,268 | INFO | Central US                → 120.12ms
+2025-12-03 20:46:05,284 | INFO | West Central US           → 125.60ms
+2025-12-03 20:46:05,305 | INFO | Mexico Central            → 134.08ms
+2025-12-03 20:46:05,331 | INFO | West US                   → 3137.32ms
+2025-12-03 20:46:05,416 | INFO | Brazil South              → 192.80ms
+2025-12-03 20:46:05,442 | INFO | Chile Central             → 196.64ms
+2025-12-03 20:46:05,475 | INFO | Spain Central             → 13.96ms
+2025-12-03 20:46:05,504 | INFO | France Central            → 30.20ms
+2025-12-03 20:46:05,531 | INFO | Germany West Central      → 31.60ms
+2025-12-03 20:46:05,561 | INFO | Italy North               → 33.76ms
+2025-12-03 20:46:05,595 | INFO | UK South                  → 37.02ms
+2025-12-03 20:46:05,663 | INFO | UK West                   → 40.30ms
+2025-12-03 20:46:05,691 | INFO | Switzerland North         → 41.16ms
+2025-12-03 20:46:05,776 | INFO | Poland Central            → 55.34ms
+2025-12-03 20:46:05,822 | INFO | Norway East               → 60.18ms
+2025-12-03 20:46:05,846 | INFO | Sweden Central            → 62.02ms
+2025-12-03 20:46:05,874 | INFO | Austria East              → 62.12ms
+2025-12-03 20:46:05,913 | INFO | Central India             → 131.48ms
+2025-12-03 20:46:05,958 | INFO | West India                → 131.70ms
+2025-12-03 20:46:05,978 | INFO | South India               → 147.36ms
+2025-12-03 20:46:06,079 | INFO | Malaysia West             → 171.42ms
+2025-12-03 20:46:06,172 | INFO | Indonesia Central         → 177.36ms
+2025-12-03 20:46:06,396 | INFO | Korea South               → 220.32ms
+2025-12-03 20:46:06,430 | INFO | Korea Central             → 225.92ms
+2025-12-03 20:46:06,477 | INFO | Japan West                → 228.04ms
+2025-12-03 20:46:06,558 | INFO | Japan East                → 235.36ms
+2025-12-03 20:46:06,887 | INFO | New Zealand North         → 263.96ms
+2025-12-03 20:46:07,029 | INFO | Israel Central            → 63.64ms
+2025-12-03 20:46:07,108 | INFO | Qatar Central             → 110.14ms
+2025-12-03 20:46:07,166 | INFO | UAE North                 → 110.16ms
+2025-12-03 20:46:07,255 | INFO | GUARDADAS 35 REGIONES LIMPIAS
+2025-12-03 20:46:07,255 | INFO | ¡35 REGIONES AZURE GUARDADAS!
+2025-12-03 20:46:07,677 | INFO | CICLO EXITOSO
+2025-12-03 20:46:07,680 | INFO | Durmiendo 10 minutos...
+2025-12-03 20:46:38,445 | INFO | SCRAPER AZURE DETENIDO POR USUARIO

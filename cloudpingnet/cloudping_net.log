@@ -1,0 +1,95 @@
+2025-12-03 20:43:51,602 | INFO | SCRAPER CLOUDPING.NET INICIADO
+2025-12-03 20:43:51,602 | INFO | Cada 10 min → aws_cloudpingnet_latency_longterm.csv
+2025-12-03 20:43:51,603 | INFO | 
+ITERACIÓN 1 - 20:43
+2025-12-03 20:43:54,382 | INFO | CARGANDO CLOUDPING.NET...
+2025-12-03 20:43:56,227 | ERROR | NO SE PUDO CLICAR AWS PING: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5a2fb89bb86a <unknown>
+#1 0x5a2fb844bbc0 <unknown>
+#2 0x5a2fb84527a8 <unknown>
+#3 0x5a2fb84552fa <unknown>
+#4 0x5a2fb84e877e <unknown>
+#5 0x5a2fb84c1ff2 <unknown>
+#6 0x5a2fb84e7748 <unknown>
+#7 0x5a2fb84c1dc3 <unknown>
+#8 0x5a2fb848eb7d <unknown>
+#9 0x5a2fb848f7f1 <unknown>
+#10 0x5a2fb8981f2f <unknown>
+#11 0x5a2fb8986892 <unknown>
+#12 0x5a2fb89680d3 <unknown>
+#13 0x5a2fb8987047 <unknown>
+#14 0x5a2fb894eb5e <unknown>
+#15 0x5a2fb89a9bf8 <unknown>
+#16 0x5a2fb89a9e08 <unknown>
+#17 0x5a2fb89ba6ec <unknown>
+#18 0x7eb4c469caa4 <unknown>
+#19 0x7eb4c4729c3c <unknown>
+
+2025-12-03 20:43:56,228 | ERROR | ERROR TOTAL: FALLO EL PING
+2025-12-03 20:43:56,573 | INFO | ERROR CAPTURADO: cloudping_net_errores/FALLO_TOTAL_1764791036.png
+2025-12-03 20:43:57,056 | WARNING | Intento 1/3 falló → 60s
+2025-12-03 20:45:01,299 | INFO | CARGANDO CLOUDPING.NET...
+2025-12-03 20:45:04,709 | ERROR | NO SE PUDO CLICAR AWS PING: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x619b2e2d086a <unknown>
+#1 0x619b2dd60bc0 <unknown>
+#2 0x619b2dd677a8 <unknown>
+#3 0x619b2dd6a023 <unknown>
+#4 0x619b2dd6a0d3 <unknown>
+#5 0x619b2ddb7a3c <unknown>
+#6 0x619b2ddb6df2 <unknown>
+#7 0x619b2de04d8a <unknown>
+#8 0x619b2ddd6ff2 <unknown>
+#9 0x619b2ddfc748 <unknown>
+#10 0x619b2ddd6dc3 <unknown>
+#11 0x619b2dda3b7d <unknown>
+#12 0x619b2dda47f1 <unknown>
+#13 0x619b2e296f2f <unknown>
+#14 0x619b2e29b892 <unknown>
+#15 0x619b2e27d0d3 <unknown>
+#16 0x619b2e29c047 <unknown>
+#17 0x619b2e263b5e <unknown>
+#18 0x619b2e2bebf8 <unknown>
+#19 0x619b2e2bee08 <unknown>
+#20 0x619b2e2cf6ec <unknown>
+#21 0x701e9969caa4 <unknown>
+#22 0x701e99729c3c <unknown>
+
+2025-12-03 20:45:04,709 | ERROR | ERROR TOTAL: FALLO EL PING
+2025-12-03 20:45:04,900 | INFO | ERROR CAPTURADO: cloudping_net_errores/FALLO_TOTAL_1764791104.png
+2025-12-03 20:45:05,100 | WARNING | Intento 2/3 falló → 60s
+2025-12-03 20:46:06,408 | INFO | CARGANDO CLOUDPING.NET...
+2025-12-03 20:46:07,991 | ERROR | NO SE PUDO CLICAR AWS PING: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55f0e62d786a <unknown>
+#1 0x55f0e5d67bc0 <unknown>
+#2 0x55f0e5d6e7a8 <unknown>
+#3 0x55f0e5d71023 <unknown>
+#4 0x55f0e5d710d3 <unknown>
+#5 0x55f0e5db31fa <unknown>
+#6 0x55f0e5dddff2 <unknown>
+#7 0x55f0e5dac2e8 <unknown>
+#8 0x55f0e5dde1be <unknown>
+#9 0x55f0e5e03748 <unknown>
+#10 0x55f0e5ddddc3 <unknown>
+#11 0x55f0e5daab7d <unknown>
+#12 0x55f0e5dab7f1 <unknown>
+#13 0x55f0e629df2f <unknown>
+#14 0x55f0e62a2892 <unknown>
+#15 0x55f0e62840d3 <unknown>
+#16 0x55f0e62a3047 <unknown>
+#17 0x55f0e626ab5e <unknown>
+#18 0x55f0e62c5bf8 <unknown>
+#19 0x55f0e62c5e08 <unknown>
+#20 0x55f0e62d66ec <unknown>
+#21 0x7f9258e9caa4 <unknown>
+#22 0x7f9258f29c3c <unknown>
+
+2025-12-03 20:46:07,993 | ERROR | ERROR TOTAL: FALLO EL PING
+2025-12-03 20:46:08,171 | INFO | ERROR CAPTURADO: cloudping_net_errores/FALLO_TOTAL_1764791167.png
+2025-12-03 20:46:08,345 | WARNING | Intento 3/3 falló → 60s
+2025-12-03 20:46:38,444 | INFO | SCRAPER DETENIDO POR USUARIO

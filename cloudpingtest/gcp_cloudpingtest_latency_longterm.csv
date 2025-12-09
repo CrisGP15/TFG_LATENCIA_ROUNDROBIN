@@ -1,0 +1,43 @@
+timestamp,provider,region,datacenter,latency_ms
+2025-12-03 20:45:00,cloudpingtest GCP,africa-south1,Johannesburg,166
+2025-12-03 20:45:00,cloudpingtest GCP,asia-east1,Changhua County,269
+2025-12-03 20:45:00,cloudpingtest GCP,asia-east2,Hong Kong,293
+2025-12-03 20:45:00,cloudpingtest GCP,asia-northeast1,Tokyo,239
+2025-12-03 20:45:00,cloudpingtest GCP,asia-northeast2,Osaka,243
+2025-12-03 20:45:00,cloudpingtest GCP,asia-northeast3,Seoul,261
+2025-12-03 20:45:00,cloudpingtest GCP,asia-south1,Mumbai,373
+2025-12-03 20:45:00,cloudpingtest GCP,asia-south2,Delhi,382
+2025-12-03 20:45:00,cloudpingtest GCP,asia-southeast1,Jurong West,312
+2025-12-03 20:45:00,cloudpingtest GCP,asia-southeast2,Jakarta,320
+2025-12-03 20:45:00,cloudpingtest GCP,australia-southeast1,Sydney,303
+2025-12-03 20:45:00,cloudpingtest GCP,australia-southeast2,Melbourne,309
+2025-12-03 20:45:00,cloudpingtest GCP,europe-central2,Warsaw,59
+2025-12-03 20:45:00,cloudpingtest GCP,europe-north1,Hamina,71
+2025-12-03 20:45:00,cloudpingtest GCP,europe-north2,Stockholm,67
+2025-12-03 20:45:00,cloudpingtest GCP,europe-southwest1,Madrid,18
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west1,St. Ghislain,38
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west10,Berlin,46
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west12,Turin,37
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west2,London,40
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west3,Frankfurt,40
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west4,Eemshaven,41
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west6,Zürich,39
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west8,Milan,37
+2025-12-03 20:45:00,cloudpingtest GCP,europe-west9,Paris,30
+2025-12-03 20:45:00,cloudpingtest GCP,me-central1,Doha,112
+2025-12-03 20:45:00,cloudpingtest GCP,me-central2,Dammam,101
+2025-12-03 20:45:00,cloudpingtest GCP,me-west1,Tel Aviv,69
+2025-12-03 20:45:00,cloudpingtest GCP,northamerica-northeast1,Montreal,97
+2025-12-03 20:45:00,cloudpingtest GCP,northamerica-northeast2,Toronto,105
+2025-12-03 20:45:00,cloudpingtest GCP,northamerica-south1,Queretaro,148
+2025-12-03 20:45:00,cloudpingtest GCP,southamerica-east1,São Paulo,215
+2025-12-03 20:45:00,cloudpingtest GCP,southamerica-west1,Santiago,210
+2025-12-03 20:45:00,cloudpingtest GCP,us-central1,Iowa,122
+2025-12-03 20:45:00,cloudpingtest GCP,us-east1,South Carolina,106
+2025-12-03 20:45:00,cloudpingtest GCP,us-east4,Northern Virginia,96
+2025-12-03 20:45:00,cloudpingtest GCP,us-east5,Ohio,101
+2025-12-03 20:45:00,cloudpingtest GCP,us-south1,Texas,131
+2025-12-03 20:45:00,cloudpingtest GCP,us-west1,Oregon,147
+2025-12-03 20:45:00,cloudpingtest GCP,us-west2,California,158
+2025-12-03 20:45:00,cloudpingtest GCP,us-west3,Utah,133
+2025-12-03 20:45:00,cloudpingtest GCP,us-west4,Nevada,156

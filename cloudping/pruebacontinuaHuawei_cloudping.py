@@ -207,13 +207,13 @@ def click_and_wait(driver, wait, btn_idx, buttons, ping_name):
     logger.warning(f"Timeout datos {ping_name}")
     return 0
 
-def extraer_y_guardar(driver, ping_type, timestamp):
+def extraer_y_guardar(driver, timestamp):
     rows = 0
     file_exists = os.path.exists(OUTPUT_CSV)
     with open(OUTPUT_CSV, 'a', newline='', encoding='utf-8') as f:
         w = csv.writer(f)
         if not file_exists:
-            w.writerow(['timestamp', 'provider', 'ping_type', 'region', 'datacenter', 'latency_ms'])
+            w.writerow(['timestamp', 'provider', 'region', 'datacenter', 'latency_ms'])
         tables = driver.find_elements(By.TAG_NAME, "table")
         for tbl in tables:
             for row in tbl.find_elements(By.TAG_NAME, "tr")[1:]:
@@ -238,9 +238,9 @@ def extraer_y_guardar(driver, ping_type, timestamp):
                     dc_name = get_datacenter_name(region_code) if region_code else region_txt
                     lat = extract_latency_value(lat_txt)
                     if lat and any(k in region_txt.lower() for k in ['ap-','na-','la-','sa-','af-','cn-']):
-                        w.writerow([timestamp, 'cloudping Huawei', ping_type,
+                        w.writerow([timestamp, 'cloudping Huawei',
                                    region_code or region_txt, dc_name, lat])
-                        logger.info(f"{ping_type} → {dc_name}: {lat}ms")
+                        logger.info(f"{dc_name}: {lat}ms")
                         rows += 1
                 except: continue
     return rows
@@ -272,7 +272,7 @@ def capturar_una_vez():
         for idx, name in enumerate(["HTTP_Ping_1", "HTTP_Ping_2"]):
             logger.info(f"\n--- {name} ---")
             click_and_wait(driver, wait, idx, buttons, name)
-            rows = extraer_y_guardar(driver, name, timestamp)
+            rows = extraer_y_guardar(driver, timestamp)
             total_rows += rows
             if idx == 0:
                 time.sleep(3)  # pausa entre pings

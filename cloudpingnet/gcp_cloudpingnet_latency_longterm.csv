@@ -1,0 +1,30 @@
+timestamp,provider,region,datacenter,latency_ms
+2025-12-03 20:46:35,cloudping.net GCP,US East,US East,595.48
+2025-12-03 20:46:35,cloudping.net GCP,North America Northeast,North America Northeast,1107.86
+2025-12-03 20:46:35,cloudping.net GCP,US Central,US Central,1123.80
+2025-12-03 20:46:35,cloudping.net GCP,US South,US South,1143.38
+2025-12-03 20:46:35,cloudping.net GCP,US West,US West,1148.60
+2025-12-03 20:46:35,cloudping.net GCP,US East 1,US East 1,265.22
+2025-12-03 20:46:35,cloudping.net GCP,US West 8,US West 8,352.50
+2025-12-03 20:46:35,cloudping.net GCP,South America East 1,South America East 1,238.98
+2025-12-03 20:46:35,cloudping.net GCP,South America West 1,South America West 1,253.92
+2025-12-03 20:46:35,cloudping.net GCP,Europe West,Europe West,127.48
+2025-12-03 20:46:35,cloudping.net GCP,Europe West,Europe West,950.12
+2025-12-03 20:46:35,cloudping.net GCP,Europe West,Europe West,350.48
+2025-12-03 20:46:35,cloudping.net GCP,Europe West,Europe West,850.74
+2025-12-03 20:46:35,cloudping.net GCP,Europe West,Europe West,654.18
+2025-12-03 20:46:35,cloudping.net GCP,Europe Central,Europe Central,267.60
+2025-12-03 20:46:35,cloudping.net GCP,Europe West,Europe West,279.26
+2025-12-03 20:46:35,cloudping.net GCP,Europe West,Europe West,480.60
+2025-12-03 20:46:35,cloudping.net GCP,Europe North,Europe North,187.44
+2025-12-03 20:46:35,cloudping.net GCP,Asia Northeast 2,Asia Northeast 2,258.98
+2025-12-03 20:46:35,cloudping.net GCP,Asia Northeast 3,Asia Northeast 3,263.56
+2025-12-03 20:46:35,cloudping.net GCP,Asia Northeast 1,Asia Northeast 1,264.28
+2025-12-03 20:46:35,cloudping.net GCP,Asia East 1,Asia East 1,264.58
+2025-12-03 20:46:35,cloudping.net GCP,Asia East 2,Asia East 2,290.80
+2025-12-03 20:46:35,cloudping.net GCP,Asia Southeast 1,Asia Southeast 1,327.40
+2025-12-03 20:46:35,cloudping.net GCP,Asia South 1,Asia South 1,381.24
+2025-12-03 20:46:35,cloudping.net GCP,Asia Southeast 2,Asia Southeast 2,328.30
+2025-12-03 20:46:35,cloudping.net GCP,Asia South 2,Asia South 2,383.02
+2025-12-03 20:46:35,cloudping.net GCP,Australia Southeast 1,Australia Southeast 1,299.84
+2025-12-03 20:46:35,cloudping.net GCP,Australia Southeast 2,Australia Southeast 2,307.46

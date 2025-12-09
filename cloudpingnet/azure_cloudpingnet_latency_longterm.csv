@@ -1,0 +1,36 @@
+timestamp,provider,region,datacenter,latency_ms
+2025-12-03 20:46:05,cloudping.net Azure,East US,East US,289.16
+2025-12-03 20:46:05,cloudping.net Azure,Canada Central,Canada Central,105.80
+2025-12-03 20:46:05,cloudping.net Azure,North Central US,North Central US,108.12
+2025-12-03 20:46:05,cloudping.net Azure,South Central US,South Central US,112.76
+2025-12-03 20:46:05,cloudping.net Azure,Canada East,Canada East,113.02
+2025-12-03 20:46:05,cloudping.net Azure,Central US,Central US,120.12
+2025-12-03 20:46:05,cloudping.net Azure,West Central US,West Central US,125.60
+2025-12-03 20:46:05,cloudping.net Azure,Mexico Central,Mexico Central,134.08
+2025-12-03 20:46:05,cloudping.net Azure,West US,West US,3137.32
+2025-12-03 20:46:05,cloudping.net Azure,Brazil South,Brazil South,192.80
+2025-12-03 20:46:05,cloudping.net Azure,Chile Central,Chile Central,196.64
+2025-12-03 20:46:05,cloudping.net Azure,Spain Central,Spain Central,13.96
+2025-12-03 20:46:05,cloudping.net Azure,France Central,France Central,30.20
+2025-12-03 20:46:05,cloudping.net Azure,Germany West Central,Germany West Central,31.60
+2025-12-03 20:46:05,cloudping.net Azure,Italy North,Italy North,33.76
+2025-12-03 20:46:05,cloudping.net Azure,UK South,UK South,37.02
+2025-12-03 20:46:05,cloudping.net Azure,UK West,UK West,40.30
+2025-12-03 20:46:05,cloudping.net Azure,Switzerland North,Switzerland North,41.16
+2025-12-03 20:46:05,cloudping.net Azure,Poland Central,Poland Central,55.34
+2025-12-03 20:46:05,cloudping.net Azure,Norway East,Norway East,60.18
+2025-12-03 20:46:05,cloudping.net Azure,Sweden Central,Sweden Central,62.02
+2025-12-03 20:46:05,cloudping.net Azure,Austria East,Austria East,62.12
+2025-12-03 20:46:05,cloudping.net Azure,Central India,Central India,131.48
+2025-12-03 20:46:05,cloudping.net Azure,West India,West India,131.70
+2025-12-03 20:46:05,cloudping.net Azure,South India,South India,147.36
+2025-12-03 20:46:05,cloudping.net Azure,Malaysia West,Malaysia West,171.42
+2025-12-03 20:46:05,cloudping.net Azure,Indonesia Central,Indonesia Central,177.36
+2025-12-03 20:46:05,cloudping.net Azure,Korea South,Korea South,220.32
+2025-12-03 20:46:05,cloudping.net Azure,Korea Central,Korea Central,225.92
+2025-12-03 20:46:05,cloudping.net Azure,Japan West,Japan West,228.04
+2025-12-03 20:46:05,cloudping.net Azure,Japan East,Japan East,235.36
+2025-12-03 20:46:05,cloudping.net Azure,New Zealand North,New Zealand North,263.96
+2025-12-03 20:46:05,cloudping.net Azure,Israel Central,Israel Central,63.64
+2025-12-03 20:46:05,cloudping.net Azure,Qatar Central,Qatar Central,110.14
+2025-12-03 20:46:05,cloudping.net Azure,UAE North,UAE North,110.16

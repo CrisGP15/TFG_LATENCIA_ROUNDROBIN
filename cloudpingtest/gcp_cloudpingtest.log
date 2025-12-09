@@ -1,0 +1,58 @@
+2025-12-03 20:44:06,710 | INFO | SCRAPER CLOUDPINGTEST GCP INICIADO
+2025-12-03 20:44:06,710 | INFO | Cada 10 min → gcp_cloudpingtest_latency_longterm.csv
+2025-12-03 20:44:06,710 | INFO | 
+ITERACIÓN 1 - 20:44
+2025-12-03 20:44:08,837 | INFO | Zombie Chrome processes killed
+2025-12-03 20:44:09,256 | INFO | CARGANDO CLOUDPINGTEST.COM/GCP...
+2025-12-03 20:44:15,364 | INFO | SIN BOTÓN → Esperando auto-start 30s
+2025-12-03 20:44:45,364 | INFO | ESPERANDO >50 'ms' ELEMENTOS (máx 300s)...
+2025-12-03 20:44:45,430 | INFO | 0s → 163 elementos 'ms'
+2025-12-03 20:44:45,431 | INFO | ¡DATOS SUFICIENTES! Esperando estabilización...
+2025-12-03 20:45:00,592 | INFO | 1 tablas encontradas
+2025-12-03 20:45:00,646 | INFO | Tabla 1: 42 filas
+2025-12-03 20:45:00,829 | INFO | Johannesburg (africa-south1): 166ms
+2025-12-03 20:45:00,904 | INFO | Changhua County (asia-east1): 269ms
+2025-12-03 20:45:00,955 | INFO | Hong Kong (asia-east2): 293ms
+2025-12-03 20:45:01,023 | INFO | Tokyo (asia-northeast1): 239ms
+2025-12-03 20:45:01,209 | INFO | Osaka (asia-northeast2): 243ms
+2025-12-03 20:45:01,379 | INFO | Seoul (asia-northeast3): 261ms
+2025-12-03 20:45:01,565 | INFO | Mumbai (asia-south1): 373ms
+2025-12-03 20:45:01,646 | INFO | Delhi (asia-south2): 382ms
+2025-12-03 20:45:01,710 | INFO | Jurong West (asia-southeast1): 312ms
+2025-12-03 20:45:01,762 | INFO | Jakarta (asia-southeast2): 320ms
+2025-12-03 20:45:01,809 | INFO | Sydney (australia-southeast1): 303ms
+2025-12-03 20:45:01,857 | INFO | Melbourne (australia-southeast2): 309ms
+2025-12-03 20:45:01,911 | INFO | Warsaw (europe-central2): 59ms
+2025-12-03 20:45:01,983 | INFO | Hamina (europe-north1): 71ms
+2025-12-03 20:45:02,041 | INFO | Stockholm (europe-north2): 67ms
+2025-12-03 20:45:02,153 | INFO | Madrid (europe-southwest1): 18ms
+2025-12-03 20:45:02,210 | INFO | St. Ghislain (europe-west1): 38ms
+2025-12-03 20:45:02,259 | INFO | Berlin (europe-west10): 46ms
+2025-12-03 20:45:02,325 | INFO | Turin (europe-west12): 37ms
+2025-12-03 20:45:02,434 | INFO | London (europe-west2): 40ms
+2025-12-03 20:45:02,562 | INFO | Frankfurt (europe-west3): 40ms
+2025-12-03 20:45:02,964 | INFO | Eemshaven (europe-west4): 41ms
+2025-12-03 20:45:03,053 | INFO | Zürich (europe-west6): 39ms
+2025-12-03 20:45:03,130 | INFO | Milan (europe-west8): 37ms
+2025-12-03 20:45:03,288 | INFO | Paris (europe-west9): 30ms
+2025-12-03 20:45:03,367 | INFO | Doha (me-central1): 112ms
+2025-12-03 20:45:03,442 | INFO | Dammam (me-central2): 101ms
+2025-12-03 20:45:03,529 | INFO | Tel Aviv (me-west1): 69ms
+2025-12-03 20:45:03,592 | INFO | Montreal (northamerica-northeast1): 97ms
+2025-12-03 20:45:03,674 | INFO | Toronto (northamerica-northeast2): 105ms
+2025-12-03 20:45:03,744 | INFO | Queretaro (northamerica-south1): 148ms
+2025-12-03 20:45:03,843 | INFO | São Paulo (southamerica-east1): 215ms
+2025-12-03 20:45:04,147 | INFO | Santiago (southamerica-west1): 210ms
+2025-12-03 20:45:04,282 | INFO | Iowa (us-central1): 122ms
+2025-12-03 20:45:04,385 | INFO | South Carolina (us-east1): 106ms
+2025-12-03 20:45:04,457 | INFO | Northern Virginia (us-east4): 96ms
+2025-12-03 20:45:04,502 | INFO | Ohio (us-east5): 101ms
+2025-12-03 20:45:04,591 | INFO | Texas (us-south1): 131ms
+2025-12-03 20:45:04,664 | INFO | Oregon (us-west1): 147ms
+2025-12-03 20:45:04,729 | INFO | California (us-west2): 158ms
+2025-12-03 20:45:04,823 | INFO | Utah (us-west3): 133ms
+2025-12-03 20:45:04,948 | INFO | Nevada (us-west4): 156ms
+2025-12-03 20:45:04,952 | INFO | ¡42 REGIONES GCP GUARDADAS!
+2025-12-03 20:45:07,279 | INFO | Zombie Chrome processes killed
+2025-12-03 20:45:07,280 | INFO | Durmiendo 10 min...
+2025-12-03 20:46:38,480 | INFO | SCRAPER GCP DETENIDO POR USUARIO
