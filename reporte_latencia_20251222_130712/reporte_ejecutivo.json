@@ -1,0 +1,29 @@
+{
+  "fecha_analisis": "2025-12-22 13:07:12",
+  "datos_analizados": {
+    "total_registros": 871333,
+    "periodo": {
+      "inicio": "2025-12-10 19:09:09",
+      "fin": "2025-12-20 19:07:46"
+    },
+    "duracion_dias": 9,
+    "proveedores": 5,
+    "regiones": 281,
+    "herramientas": 5
+  },
+  "umbrales": {
+    "latencia_aceptable_ms": 100,
+    "disponibilidad_minima": 0.95
+  },
+  "metricas_globales": {
+    "disponibilidad": 0.2674109668748917,
+    "latencia_media_ms": 169.58815817833135,
+    "latencia_p95_ms": 321.36
+  },
+  "recomendaciones": {
+    "MULTISERVIDOR_RECOMENDADO": 0,
+    "MULTISERVIDOR_CONSIDERAR": 0,
+    "MONOSERVIDOR": 4
+  },
+  "recomendacion_general": "MANTENER MONOSERVIDOR EN LA MAYORÍA DE REGIONES"
+}

@@ -1,0 +1,5 @@
+region,recomendacion,proveedores,disponibilidad_simultanea,mejora_potencial,costo_adicional,roi_estimado,muestras
+AF-SOUTH-1,🔴 MONOSERVIDOR SUFICIENTE,"huawei, aws",0.00%,8.7%,60,-71%,100
+AP-SOUTHEAST-1,🔴 MONOSERVIDOR SUFICIENTE,"huawei, aws",0.00%,19.4%,60,-35%,100
+AP-SOUTHEAST-2,🔴 MONOSERVIDOR SUFICIENTE,"huawei, aws",0.00%,11.0%,60,-63%,100
+AP-SOUTHEAST-3,🔴 MONOSERVIDOR SUFICIENTE,"huawei, aws",0.00%,28.4%,60,-5%,100

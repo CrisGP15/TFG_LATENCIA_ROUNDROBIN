@@ -1,0 +1,254 @@
+{
+  "generales": {
+    "por_proveedor": "                registros   media  mediana     std     p95      p99  disponibilidad\nproveedor_real                                                                     \naws                 50366  272.49   175.00  244.38  837.75   955.00            0.20\nazure               44615  168.06   126.00  340.54  282.40  3129.82            0.35\ngcp                 40623  279.26   241.36  263.43  929.46  1205.72            0.23\nhuawei               8212  284.38   237.00  181.75  565.00  1008.45            0.00\nmulti              727517  155.14   155.71   87.03  296.80   345.89            0.27",
+    "por_herramienta": "               latencia_media  latencia_std  latencia_p95  disponibilidad  proveedores_medidos\nherramienta                                                                                   \ncloudping              190.87        142.57        390.70            0.20                    2\ncloudpingco            157.08         82.72        294.87            0.26                    1\ncloudpinginfo          141.69        111.51        314.00            0.38                    1\ncloudpingnet           270.16        380.03        926.95            0.22                    3\ncloudpingtest          240.57        227.07        756.00            0.28                    3",
+    "por_hora": "      latency_ms  latencia_aceptable\nhora                                \n0         169.58                0.27\n1         170.75                0.27\n2         170.54                0.27\n3         169.12                0.27\n4         171.02                0.27\n5         169.68                0.27\n6         170.26                0.27\n7         169.47                0.27\n8         169.32                0.27\n9         169.31                0.27\n10        168.44                0.27\n11        168.73                0.27\n12        169.08                0.27\n13        168.33                0.27\n14        170.20                0.27\n15        170.01                0.27\n16        169.16                0.27\n17        170.66                0.27\n18        168.74                0.27\n19        169.36                0.27\n20        169.46                0.27\n21        169.64                0.27\n22        170.20                0.27\n23        169.33                0.27",
+    "top_datacenters": "                         latencia_media  latencia_std  latencia_p95  disponibilidad proveedor\ndatacenter_id                                                                                \nmulti_MADRID                       6.64          4.18          9.00            1.00     multi\nazure_SPAIN CENTRAL                9.36          1.64         12.95            1.00     azure\nazure_SPAINCENTRAL                13.92          6.87         18.00            1.00     azure\nmulti_GLOBAL                      19.12          6.10         30.00            1.00     multi\ngcp_EUROPE-SOUTHWEST1             19.26          6.90         31.20            1.00       gcp\nmulti_EUROPE-SOUTHWEST1           20.27          8.19         38.20            1.00     multi\nmulti_PARIS                       23.47          2.26         27.00            1.00     multi\nazure_FRANCE CENTRAL              26.61          1.74         29.45            1.00     azure\nmulti_ROUBAIX                     29.90         11.12         36.00            0.99     multi\nmulti_GRAVELINES                  30.99          9.98         39.00            0.99     multi"
+  },
+  "comparacion_proveedores": {
+    "AF-SOUTH-1": {
+      "proveedores": {
+        "huawei": {
+          "latencia_media": 275.3129562043796,
+          "disponibilidad": 0.0,
+          "latencia_p95": 419.47499999999997,
+          "muestras": 548
+        },
+        "aws": {
+          "latencia_media": 281.1183439490446,
+          "disponibilidad": 0.0,
+          "latencia_p95": 590.0,
+          "muestras": 1570
+        }
+      },
+      "mejor_latencia": [
+        "huawei",
+        {
+          "latencia_media": 275.3129562043796,
+          "disponibilidad": 0.0,
+          "latencia_p95": 419.47499999999997,
+          "muestras": 548
+        }
+      ],
+      "mejor_disponibilidad": [
+        "huawei",
+        {
+          "latencia_media": 275.3129562043796,
+          "disponibilidad": 0.0,
+          "latencia_p95": 419.47499999999997,
+          "muestras": 548
+        }
+      ],
+      "mejora_potencial": 1.0433251585711167
+    },
+    "AP-SOUTHEAST-1": {
+      "proveedores": {
+        "huawei": {
+          "latencia_media": 223.66879562043795,
+          "disponibilidad": 0.0,
+          "latencia_p95": 232.0,
+          "muestras": 548
+        },
+        "aws": {
+          "latencia_media": 330.55699930216326,
+          "disponibilidad": 0.0,
+          "latencia_p95": 687.0,
+          "muestras": 1433
+        }
+      },
+      "mejor_latencia": [
+        "huawei",
+        {
+          "latencia_media": 223.66879562043795,
+          "disponibilidad": 0.0,
+          "latencia_p95": 232.0,
+          "muestras": 548
+        }
+      ],
+      "mejor_disponibilidad": [
+        "huawei",
+        {
+          "latencia_media": 223.66879562043795,
+          "disponibilidad": 0.0,
+          "latencia_p95": 232.0,
+          "muestras": 548
+        }
+      ],
+      "mejora_potencial": 19.286039130793693
+    },
+    "AP-SOUTHEAST-2": {
+      "proveedores": {
+        "huawei": {
+          "latencia_media": 248.19525547445255,
+          "disponibilidad": 0.0,
+          "latencia_p95": 285.825,
+          "muestras": 548
+        },
+        "aws": {
+          "latencia_media": 298.4777821393523,
+          "disponibilidad": 0.0,
+          "latencia_p95": 347.564,
+          "muestras": 1019
+        }
+      },
+      "mejor_latencia": [
+        "huawei",
+        {
+          "latencia_media": 248.19525547445255,
+          "disponibilidad": 0.0,
+          "latencia_p95": 285.825,
+          "muestras": 548
+        }
+      ],
+      "mejor_disponibilidad": [
+        "huawei",
+        {
+          "latencia_media": 248.19525547445255,
+          "disponibilidad": 0.0,
+          "latencia_p95": 285.825,
+          "muestras": 548
+        }
+      ],
+      "mejora_potencial": 9.197915976317386
+    },
+    "AP-SOUTHEAST-3": {
+      "proveedores": {
+        "huawei": {
+          "latencia_media": 198.93430656934308,
+          "disponibilidad": 0.0,
+          "latencia_p95": 245.77499999999992,
+          "muestras": 548
+        },
+        "aws": {
+          "latencia_media": 360.05214921286796,
+          "disponibilidad": 0.0,
+          "latencia_p95": 744.0,
+          "muestras": 1461
+        }
+      },
+      "mejor_latencia": [
+        "huawei",
+        {
+          "latencia_media": 198.93430656934308,
+          "disponibilidad": 0.0,
+          "latencia_p95": 245.77499999999992,
+          "muestras": 548
+        }
+      ],
+      "mejor_disponibilidad": [
+        "huawei",
+        {
+          "latencia_media": 198.93430656934308,
+          "disponibilidad": 0.0,
+          "latencia_p95": 245.77499999999992,
+          "muestras": 548
+        }
+      ],
+      "mejora_potencial": 28.823210469038386
+    }
+  },
+  "tendencias": {
+    "huawei": {
+      "tendencia": "➡️ ESTABLE",
+      "pendiente": -0.0680277796918357,
+      "r_cuadrado": 0.00010488197552305317,
+      "cambio_porcentual": 16.37262168077541,
+      "latencia_inicial": 261.6757575757576,
+      "latencia_final": 304.5189393939394,
+      "dias_analizados": 11,
+      "disponibilidad_promedio": 0.0
+    },
+    "aws": {
+      "tendencia": "📈 Empeorando",
+      "pendiente": 0.7997648579783159,
+      "r_cuadrado": 0.1724383114010679,
+      "cambio_porcentual": 0.9914169948287949,
+      "latencia_inicial": 265.9397714907508,
+      "latencia_final": 268.57634358131895,
+      "dias_analizados": 11,
+      "disponibilidad_promedio": 0.20202062767717407
+    },
+    "gcp": {
+      "tendencia": "📈 Empeorando",
+      "pendiente": 0.12879620059412777,
+      "r_cuadrado": 0.016596159935559136,
+      "cambio_porcentual": 1.0094853716129515,
+      "latencia_inicial": 283.0087646293888,
+      "latencia_final": 285.865696708705,
+      "dias_analizados": 11,
+      "disponibilidad_promedio": 0.2241627728543641
+    },
+    "azure": {
+      "tendencia": "➡️ ESTABLE",
+      "pendiente": -0.01467627721116907,
+      "r_cuadrado": 0.00034612414434932926,
+      "cambio_porcentual": 3.1589577056411717,
+      "latencia_inicial": 164.99569023569023,
+      "latencia_final": 170.2078343063664,
+      "dias_analizados": 11,
+      "disponibilidad_promedio": 0.3543921147351107
+    }
+  },
+  "rentabilidad": {
+    "AF-SOUTH-1": {
+      "recomendacion": "🔴 MONOSERVIDOR SUFICIENTE",
+      "razon": "Baja mejora (8.7%) y disponibilidad (0.0%)",
+      "proveedores": [
+        "huawei",
+        "aws"
+      ],
+      "disponibilidad_simultanea": 0.0,
+      "mejora_potencial_latencia": 8.702712010581129,
+      "costo_monoservidor": 100,
+      "costo_multiservidor": 160,
+      "costo_adicional": 60,
+      "roi_estimado": -70.99095996472956,
+      "muestras_analizadas": 100
+    },
+    "AP-SOUTHEAST-1": {
+      "recomendacion": "🔴 MONOSERVIDOR SUFICIENTE",
+      "razon": "Baja mejora (19.4%) y disponibilidad (0.0%)",
+      "proveedores": [
+        "huawei",
+        "aws"
+      ],
+      "disponibilidad_simultanea": 0.0,
+      "mejora_potencial_latencia": 19.425084808198108,
+      "costo_monoservidor": 100,
+      "costo_multiservidor": 160,
+      "costo_adicional": 60,
+      "roi_estimado": -35.2497173060063,
+      "muestras_analizadas": 100
+    },
+    "AP-SOUTHEAST-2": {
+      "recomendacion": "🔴 MONOSERVIDOR SUFICIENTE",
+      "razon": "Baja mejora (11.0%) y disponibilidad (0.0%)",
+      "proveedores": [
+        "huawei",
+        "aws"
+      ],
+      "disponibilidad_simultanea": 0.0,
+      "mejora_potencial_latencia": 11.031451486559751,
+      "costo_monoservidor": 100,
+      "costo_multiservidor": 160,
+      "costo_adicional": 60,
+      "roi_estimado": -63.22849504480082,
+      "muestras_analizadas": 100
+    },
+    "AP-SOUTHEAST-3": {
+      "recomendacion": "🔴 MONOSERVIDOR SUFICIENTE",
+      "razon": "Baja mejora (28.4%) y disponibilidad (0.0%)",
+      "proveedores": [
+        "huawei",
+        "aws"
+      ],
+      "disponibilidad_simultanea": 0.0,
+      "mejora_potencial_latencia": 28.40265238744574,
+      "costo_monoservidor": 100,
+      "costo_multiservidor": 160,
+      "costo_adicional": 60,
+      "roi_estimado": -5.32449204184753,
+      "muestras_analizadas": 100
+    }
+  }
+}

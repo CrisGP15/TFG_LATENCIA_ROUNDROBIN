@@ -1,0 +1,27 @@
+================================================================================
+REPORTE EJECUTIVO - ANÁLISIS MULTISERVIDOR vs MONOSERVIDOR
+================================================================================
+
+RESUMEN DE DATOS ANALIZADOS:
+----------------------------------------
+• Período: 2025-12-10 19:09:09 a 2025-12-20 19:07:46
+• Duración: 9 días
+• Total registros: 871,333
+• Proveedores analizados: 5
+• Regiones analizadas: 281
+• Umbral latencia: 100 ms
+
+MÉTRICAS GLOBALES:
+----------------------------------------
+• Disponibilidad global: 26.74%
+• Latencia media: 169.6 ms
+• Latencia P95: 321.4 ms
+
+DISTRIBUCIÓN DE RECOMENDACIONES:
+----------------------------------------
+• Multiservidor Recomendado: 0 regiones (0.0%)
+• Multiservidor Considerar: 0 regiones (0.0%)
+• Monoservidor: 4 regiones (100.0%)
+
+RECOMENDACIÓN GENERAL:
+MANTENER MONOSERVIDOR EN LA MAYORÍA DE REGIONES
