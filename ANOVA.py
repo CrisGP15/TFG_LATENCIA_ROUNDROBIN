@@ -11,22 +11,14 @@ import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 import os
+import sys
 import warnings
+from datetime import datetime
 warnings.filterwarnings('ignore')
 
 # ============================================
 # CONFIGURACIÓN
 # ============================================
-CARPETA = "ANOVA_Resultados"
-os.makedirs(CARPETA, exist_ok=True)
-
-COLORES = {
-    'AWS': '#FF9900',
-    'Azure': '#0078D4',
-    'GCP': '#4285F4',
-    'Huawei': '#FF0000'
-}
-
 # Coordenadas UAM Madrid
 UAM_MADRID = (40.5449, -3.6969)
 
@@ -72,29 +64,87 @@ def calcular_distancia(coord1, coord2):
     c = 2 * atan2(sqrt(a), sqrt(1-a))
     return R * c
 
-def cargar_y_normalizar():
+def cargar_y_normalizar(archivos):
     """Carga datos y calcula latencia normalizada"""
     print("📊 CARGANDO Y NORMALIZANDO DATOS")
     print("="*50)
     
-    archivos = {
-        'AWS': 'aws_cloudping_latency_longterm.csv',
-        'Huawei': 'huawei_cloudping_latency_longterm.csv',
-        'Azure': 'azure_cloudpingnet_latency_longterm.csv',
-        'GCP': 'gcp_cloudpingnet_latency_longterm.csv'
-    }
+    # Validar que se proporcionaron 4 archivos
+    if len(archivos) != 4:
+        print(f"❌ Error: Se esperaban 4 archivos CSV, pero se recibieron {len(archivos)}")
+        print("Uso: python script.py aws.csv azure.csv gcp.csv huawei.csv")
+        sys.exit(1)
     
     datos_todos = []
     
-    for proveedor, archivo in archivos.items():
+    for archivo in archivos:
         try:
-            if not os.path.exists(archivo):
-                print(f"⚠️  {archivo} no encontrado")
-                continue
+            proveedor = None
+            # Determinar proveedor basado en el nombre del archivo
+            archivo_lower = archivo.lower()
+            if 'aws' in archivo_lower:
+                proveedor = 'AWS'
+                COLORES = {'AWS': '#FF9900'}
+            elif 'azure' in archivo_lower:
+                proveedor = 'Azure'
+                COLORES = {'Azure': '#0078D4'}
+            elif 'gcp' in archivo_lower:
+                proveedor = 'GCP'
+                COLORES = {'GCP': '#4285F4'}
+            elif 'huawei' in archivo_lower:
+                proveedor = 'Huawei'
+                COLORES = {'Huawei': '#FF0000'}
+            else:
+                # Si no se reconoce en el nombre, intentar deducir del contenido
+                print(f"⚠️  No se pudo determinar proveedor para {archivo}, intentando deducir del CSV...")
             
-            print(f"📂 {proveedor}...")
+            print(f"📂 Cargando {archivo}...")
             df = pd.read_csv(archivo)
             df.columns = df.columns.str.lower().str.strip()
+            
+            # Verificar columnas requeridas
+            if 'provider' not in df.columns:
+                print(f"   ℹ️  Columna 'provider' no encontrada, usando proveedor deducido")
+                if proveedor:
+                    df['provider'] = proveedor
+                else:
+                    # Intentar deducir de otras columnas
+                    for col in df.columns:
+                        if 'aws' in str(df[col].iloc[0]).lower():
+                            proveedor = 'AWS'
+                            break
+                        elif 'azure' in str(df[col].iloc[0]).lower():
+                            proveedor = 'Azure'
+                            break
+                        elif 'gcp' in str(df[col].iloc[0]).lower():
+                            proveedor = 'GCP'
+                            break
+                        elif 'huawei' in str(df[col].iloc[0]).lower():
+                            proveedor = 'Huawei'
+                            break
+                    
+                    if proveedor:
+                        df['provider'] = proveedor
+                    else:
+                        print(f"   ❌ No se pudo determinar proveedor para {archivo}")
+                        continue
+            
+            # Asegurar que el proveedor está en mayúsculas y corregido
+            if proveedor and 'provider' in df.columns:
+                df['provider'] = proveedor
+            elif 'provider' in df.columns:
+                # Normalizar nombres de proveedores
+                df['provider'] = df['provider'].str.upper()
+                df['provider'] = df['provider'].replace({
+                    'AWS': 'AWS',
+                    'AZURE': 'Azure',
+                    'GCP': 'GCP',
+                    'HUAWEI': 'Huawei',
+                    'GOOGLE': 'GCP',
+                    'GOOGLE CLOUD': 'GCP',
+                    'MICROSOFT': 'Azure',
+                    'MICROSOFT AZURE': 'Azure'
+                })
             
             # Buscar columna de latencia
             col_latencia = None
@@ -104,17 +154,21 @@ def cargar_y_normalizar():
                     break
             
             if col_latencia is None:
+                print(f"   ❌ No se encontró columna de latencia en {archivo}")
                 continue
             
             # Limpiar datos
-            df_limpio = df[[col_latencia]].copy()
+            df_limpio = df[['provider', col_latencia]].copy()
             df_limpio = df_limpio.dropna()
             df_limpio = df_limpio[df_limpio[col_latencia] > 0]
             
             # Buscar región
             col_region = None
             for col in df.columns:
-                if 'region' in col or 'location' in col:
+                if 'region' in col:
+                    col_region = col
+                    break
+                elif 'location' in col:
                     col_region = col
                     break
             
@@ -124,16 +178,16 @@ def cargar_y_normalizar():
                 df_limpio['region'] = 'default'
             
             df_limpio['latency_ms'] = df_limpio[col_latencia]
-            df_limpio['provider'] = proveedor
             
             datos_todos.append(df_limpio[['provider', 'region', 'latency_ms']])
-            print(f"   ✅ {len(df_limpio):,} registros")
+            print(f"   ✅ {len(df_limpio):,} registros para {df_limpio['provider'].iloc[0]}")
             
         except Exception as e:
-            print(f"   ❌ Error: {str(e)}")
+            print(f"   ❌ Error procesando {archivo}: {str(e)}")
+            continue
     
     if not datos_todos:
-        raise ValueError("No se cargaron datos")
+        raise ValueError("No se cargaron datos válidos")
     
     df_completo = pd.concat(datos_todos, ignore_index=True)
     
@@ -150,7 +204,7 @@ def cargar_y_normalizar():
         
         if proveedor in COORDENADAS:
             for reg_pattern, coords in COORDENADAS[proveedor].items():
-                if reg_pattern.lower() in str(region).lower():
+                if isinstance(region, str) and reg_pattern.lower() in region.lower():
                     distancia_km = calcular_distancia(UAM_MADRID, coords)
                     break
         
@@ -184,6 +238,14 @@ def crear_graficas(df):
     """Crea gráficas solo de latencia normalizada"""
     print(f"\n🎨 CREANDO GRÁFICAS DE LATENCIA NORMALIZADA")
     print("="*50)
+    
+    # Definir colores
+    COLORES = {
+        'AWS': '#FF9900',
+        'Azure': '#0078D4',
+        'GCP': '#4285F4',
+        'Huawei': '#FF0000'
+    }
     
     # 1. Boxplot de latencia normalizada
     plt.figure(figsize=(12, 8))
@@ -318,18 +380,32 @@ def analisis_anova(df):
 # ============================================
 # FUNCIÓN PRINCIPAL
 # ============================================
-def main():
+def main(archivos):
     """Ejecuta análisis completo"""
+    # Crear carpeta con timestamp
+    timestamp = datetime.now().strftime("%d_%m_%Y_%H_%M")
+    global CARPETA
+    CARPETA = f"ANOVA_RESULTADOS_{timestamp}"
+    os.makedirs(CARPETA, exist_ok=True)
+    
     print("="*60)
     print("ANÁLISIS ANOVA - LATENCIA NORMALIZADA")
     print("="*60)
+    print(f"Archivos a analizar: {', '.join(archivos)}")
     print("Fórmula: Latencia Normalizada = Latencia (ms) / Distancia (km)")
     print(f"Resultados en: {CARPETA}/")
     print("="*60)
     
     try:
         # 1. Cargar y normalizar
-        df = cargar_y_normalizar()
+        df = cargar_y_normalizar(archivos)
+        
+        # Verificar que tenemos datos de los 4 proveedores
+        proveedores = df['provider'].unique()
+        print(f"\n📋 Proveedores encontrados: {', '.join(proveedores)}")
+        
+        if len(proveedores) < 4:
+            print(f"⚠️  Advertencia: Solo se encontraron {len(proveedores)} proveedores de 4 esperados")
         
         # 2. Crear gráficas
         crear_graficas(df)
@@ -343,26 +419,47 @@ def main():
         print(f"{'='*60}")
         print(f"📁 Resultados en: {CARPETA}/")
         print(f"📊 ANOVA: {'SIGNIFICATIVO' if p_value < 0.05 else 'NO SIGNIFICATIVO'}")
+        print(f"📊 p-valor: {p_value:.6f}")
         
         # Mostrar archivos
-        archivos = os.listdir(CARPETA)
+        archivos_generados = os.listdir(CARPETA)
         print(f"\n📋 Archivos generados:")
-        for archivo in sorted(archivos):
+        for archivo in sorted(archivos_generados):
             print(f"  • {archivo}")
         
     except Exception as e:
         print(f"\n❌ ERROR: {str(e)}")
+        import traceback
+        traceback.print_exc()
 
 # ============================================
 # EJECUTAR
 # ============================================
 if __name__ == "__main__":
+    # Verificar argumentos
+    if len(sys.argv) < 5:
+        print("Uso: python script.py aws.csv azure.csv gcp.csv huawei.csv")
+        print("Ejemplo: python script.py datos_aws.csv datos_azure.csv datos_gcp.csv datos_huawei.csv")
+        sys.exit(1)
+    
+    # Obtener archivos de línea de comandos
+    archivos_csv = sys.argv[1:5]
+    
+    # Verificar que los archivos existen
+    for archivo in archivos_csv:
+        if not os.path.exists(archivo):
+            print(f"❌ Error: El archivo {archivo} no existe")
+            sys.exit(1)
+    
     # Instalar dependencias si faltan
     try:
         import statsmodels
+        import seaborn
+        import scipy
     except ImportError:
         print("Instalando dependencias...")
         import subprocess
-        subprocess.check_call(['pip', 'install', 'statsmodels', 'seaborn', 'scipy'])
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'statsmodels', 'seaborn', 'scipy'])
     
-    main()
+    # Ejecutar análisis
+    main(archivos_csv)
