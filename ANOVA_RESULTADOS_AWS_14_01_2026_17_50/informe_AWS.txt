@@ -1,0 +1,78 @@
+================================================================================
+INFORME - ANÁLISIS COMPARATIVO DE AWS POR FUENTE DE DATOS
+================================================================================
+
+Fecha de análisis: 2026-01-14 17:50:17
+Proveedor analizado: AWS
+Carpeta de resultados: ANOVA_RESULTADOS_AWS_14_01_2026_17_50
+Número de fuentes comparadas: 4
+
+ARCHIVOS PROCESADOS:
+----------------------------------------
+  • aws_cloudping_latency_longterm.csv
+  • aws_cloudpingnet_latency_longterm.csv
+  • aws_cloudpingtest_latency_longterm.csv
+  • cloudpinginfo_latency_longterm.csv
+
+RESUMEN GENERAL:
+----------------------------------------
+Total de registros: 69,610
+Periodo cubierto: 2025-12-10 19:12:26 a 2025-12-20 19:04:27
+
+FUENTES DE DATOS ANALIZADAS:
+----------------------------------------
+
+Cloudping:
+  Registros: 17,081 (24.5%)
+  Media: 145.92 ms
+  Mediana: 138.50 ms
+
+Cloudpingnet:
+  Registros: 15,939 (22.9%)
+  Media: 148.32 ms
+  Mediana: 149.26 ms
+
+Cloudpingtest:
+  Registros: 17,346 (24.9%)
+  Media: 511.23 ms
+  Mediana: 508.00 ms
+
+Cloudpinginfo:
+  Registros: 19,244 (27.6%)
+  Media: 149.63 ms
+  Mediana: 133.00 ms
+
+ESTADÍSTICAS DETALLADAS POR FUENTE:
+----------------------------------------
+               count    mean     std   min  median      max
+fuente_datos                                               
+Cloudping      17081  145.92   89.41  11.5  138.50  1695.00
+Cloudpinginfo  19244  149.63  115.05  10.0  133.00  3435.00
+Cloudpingnet   15939  148.32   87.08  10.3  149.26   732.88
+Cloudpingtest  17346  511.23  267.63  48.0  508.00   999.00
+
+================================================================================
+RESULTADOS ANOVA:
+================================================================================
+
+F-estadístico: 22723.3720
+p-valor: 0.0000
+
+CONCLUSIÓN: Existen diferencias SIGNIFICATIVAS entre las fuentes de datos
+
+================================================================================
+COMPARATIVA DE FUENTES:
+================================================================================
+
+Mejor latencia promedio: Cloudping (145.9 ms)
+Peor latencia promedio: Cloudpingtest (511.2 ms)
+Diferencia: 365.3 ms
+Variación porcentual: 250.3%
+
+================================================================================
+GRÁFICOS GENERADOS:
+================================================================================
+
+1. violinplot_fuentes_AWS.png - Distribución por fuente
+2. boxplot_varianza_fuentes_AWS.png - Varianza por fuente
+3. barras_medias_fuentes_AWS.png - Medias comparativas

@@ -1,0 +1,33 @@
+======================================================================
+INFORME - CORRELACIÓN DE LATENCIA
+======================================================================
+
+Fecha: 2026-01-14 18:38:04
+Plataforma: CloudPing.net
+Carpeta: CORRELACION_14_01_2026_18_38
+
+ARCHIVOS:
+-----------------------------------
+• AWS: aws_cloudpingnet_latency_longterm.csv
+• Azure: azure_cloudpingnet_latency_longterm.csv
+
+RESULTADOS DE CORRELACIÓN:
+-----------------------------------
+
+AWS vs Azure:
+  Correlación (r): 0.099
+  Valor p: 0.1322
+  Significativo (p<0.05): NO
+  R²: 0.010
+  Interpretación: Correlación muy débil o nula
+  Puntos: 231
+  Ecuación: y = 0.023x + 201.766
+
+CONCLUSIONES:
+-----------------------------------
+Correlación más fuerte: AWS vs Azure
+• Valor: 0.099
+• Tipo: Correlación muy débil o nula
+• Significativa: NO
+
+Correlaciones significativas: 0/1

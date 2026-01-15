@@ -1,0 +1,49 @@
+======================================================================
+INFORME - COMPARACIÓN TEMPORAL DE LATENCIA
+======================================================================
+
+Fecha de análisis: 2026-01-14 18:21:34
+Plataforma: CloudPing
+Carpeta: GRAFICAS_ANALISIS_14_01_2026_18_21
+
+ARCHIVOS PROCESADOS:
+-----------------------------------
+• AWS: aws_cloudping_latency_longterm.csv
+• Huawei Cloud: huawei_cloudping_latency_longterm.csv
+
+RESUMEN GENERAL:
+-----------------------------------
+Total registros: 29,668
+Periodo: 2025-12-10 19:09:09 a 2025-12-20 18:54:58
+Duración: 9 días
+Proveedores: 2
+
+ESTADÍSTICAS POR PROVEEDOR:
+-----------------------------------
+
+AWS:
+  Registros: 17,081.0
+  Media: 145.92 ms
+  Desviación: 89.41 ms
+  Mínimo: 11.50 ms
+  Máximo: 1695.00 ms
+  Coef. variación: 61.3%
+
+Huawei Cloud:
+  Registros: 12,587.0
+  Media: 262.69 ms
+  Desviación: 155.83 ms
+  Mínimo: 141.50 ms
+  Máximo: 4089.00 ms
+  Coef. variación: 59.3%
+
+COMPARATIVA:
+-----------------------------------
+Mejor latencia: AWS (145.9 ms)
+Peor latencia: Huawei Cloud (262.7 ms)
+Diferencia: 116.8 ms
+Variación: 80.0%
+
+GRÁFICO GENERADO:
+-----------------------------------
+comparacion_temporal_cloudping.png

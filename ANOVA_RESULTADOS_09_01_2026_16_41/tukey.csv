@@ -1,7 +1,0 @@
-group1,group2,meandiff,p-adj,lower,upper,reject
-AWS,Azure,-0.0383,0.0,-0.0428,-0.0339,True
-AWS,GCP,-0.0013,0.8737,-0.0059,0.0032,False
-AWS,Huawei,0.062,0.0,0.0567,0.0672,True
-Azure,GCP,0.037,0.0,0.033,0.041,True
-Azure,Huawei,0.1003,0.0,0.0955,0.1051,True
-GCP,Huawei,0.0633,0.0,0.0584,0.0682,True

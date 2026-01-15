@@ -1,0 +1,33 @@
+======================================================================
+INFORME - CORRELACIÓN DE LATENCIA
+======================================================================
+
+Fecha: 2026-01-14 18:40:40
+Plataforma: CloudPing
+Carpeta: CORRELACION_14_01_2026_18_40
+
+ARCHIVOS:
+-----------------------------------
+• AWS: aws_cloudping_latency_longterm.csv
+• Huawei: huawei_cloudping_latency_longterm.csv
+
+RESULTADOS DE CORRELACIÓN:
+-----------------------------------
+
+AWS vs Huawei:
+  Correlación (r): 0.076
+  Valor p: 0.2379
+  Significativo (p<0.05): NO
+  R²: 0.006
+  Interpretación: Correlación muy débil o nula
+  Puntos: 240
+  Ecuación: y = 0.277x + 222.693
+
+CONCLUSIONES:
+-----------------------------------
+Correlación más fuerte: AWS vs Huawei
+• Valor: 0.076
+• Tipo: Correlación muy débil o nula
+• Significativa: NO
+
+Correlaciones significativas: 0/1

@@ -1,0 +1,33 @@
+======================================================================
+INFORME - CORRELACIÓN DE LATENCIA
+======================================================================
+
+Fecha: 2026-01-14 18:39:51
+Plataforma: CloudPingTest
+Carpeta: CORRELACION_14_01_2026_18_39
+
+ARCHIVOS:
+-----------------------------------
+• Azure: azure_cloudpingtest_latency_longterm.csv
+• GCP: gcp_cloudpingtest_latency_longterm.csv
+
+RESULTADOS DE CORRELACIÓN:
+-----------------------------------
+
+Azure vs GCP:
+  Correlación (r): -0.376
+  Valor p: 0.0000
+  Significativo (p<0.05): SÍ
+  R²: 0.142
+  Interpretación: Correlación débil
+  Puntos: 240
+  Ecuación: y = -0.085x + 159.695
+
+CONCLUSIONES:
+-----------------------------------
+Correlación más fuerte: Azure vs GCP
+• Valor: -0.376
+• Tipo: Correlación débil
+• Significativa: SÍ
+
+Correlaciones significativas: 1/1

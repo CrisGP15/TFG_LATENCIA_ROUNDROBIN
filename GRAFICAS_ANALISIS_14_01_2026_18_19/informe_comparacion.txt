@@ -1,0 +1,58 @@
+======================================================================
+INFORME - COMPARACIÓN TEMPORAL DE LATENCIA
+======================================================================
+
+Fecha de análisis: 2026-01-14 18:19:45
+Plataforma: CloudPingTest
+Carpeta: GRAFICAS_ANALISIS_14_01_2026_18_19
+
+ARCHIVOS PROCESADOS:
+-----------------------------------
+• AWS: aws_cloudpingtest_latency_longterm.csv
+• Azure: azure_cloudpingtest_latency_longterm.csv
+• GCP: gcp_cloudpingtest_latency_longterm.csv
+
+RESUMEN GENERAL:
+-----------------------------------
+Total registros: 65,749
+Periodo: 2025-12-10 19:29:38 a 2025-12-20 18:49:57
+Duración: 9 días
+Proveedores: 3
+
+ESTADÍSTICAS POR PROVEEDOR:
+-----------------------------------
+
+AWS:
+  Registros: 17,346.0
+  Media: 511.23 ms
+  Desviación: 267.63 ms
+  Mínimo: 48.00 ms
+  Máximo: 999.00 ms
+  Coef. variación: 52.4%
+
+Azure:
+  Registros: 25,345.0
+  Media: 139.79 ms
+  Desviación: 83.52 ms
+  Mínimo: 10.00 ms
+  Máximo: 1346.00 ms
+  Coef. variación: 59.7%
+
+GCP:
+  Registros: 23,058.0
+  Media: 147.73 ms
+  Desviación: 102.88 ms
+  Mínimo: 14.00 ms
+  Máximo: 704.00 ms
+  Coef. variación: 69.6%
+
+COMPARATIVA:
+-----------------------------------
+Mejor latencia: Azure (139.8 ms)
+Peor latencia: AWS (511.2 ms)
+Diferencia: 371.4 ms
+Variación: 265.7%
+
+GRÁFICO GENERADO:
+-----------------------------------
+comparacion_temporal_cloudpingtest.png
